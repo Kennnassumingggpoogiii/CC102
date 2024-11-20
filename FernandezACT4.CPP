@@ -1,16 +1,12 @@
 #include <iostream>
-
 using namespace std;
-
 int main() {
 	double balance;
 	string accountType, accountLevel;
 	cout << "Enter your bank account balance:$"; cin >> balance;
 	cout << "Enter your account type(Personal or Business): "; cin >> accountType;
 	cout << "Enter your account level(Standard, Gold, Platinum): "; cin >> accountLevel;
-	
 	double interestRate = 0.0;
-	
 	if (accountType == "Personal") 
 		if (accountLevel == "Standard" && balance >= 0)
 			interestRate = 1.2;
